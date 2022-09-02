@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     private var customAdapter: CustomAdapter = CustomAdapter()
     private lateinit var mainViewModel: MainViewModel
     private lateinit var _bindings: ActivityMainBinding
-    private val binding get() = _bindings!!
+    private val binding get() = _bindings
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

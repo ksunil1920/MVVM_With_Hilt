@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.sky.kahabat.databinding.EachRowItemBinding
+
 import com.sky.kahabat.model.Result
 
 class CustomAdapter :
@@ -16,8 +17,7 @@ class CustomAdapter :
     // Create new views (invoked by the layout manager)
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         // Create a new view, which defines the UI of the list item
-        val rootView =
-            EachRowItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val rootView = EachRowItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
 
         return ViewHolder(rootView)
     }
